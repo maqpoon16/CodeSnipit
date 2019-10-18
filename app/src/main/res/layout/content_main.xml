@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+       <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+           android:visibility="gone"
+           app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+           app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+           app:layout_constraintStart_toStartOf="@+id/linearLayout"
+           app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+       <LinearLayout
+           android:id="@+id/linearLayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_margin="8dp"
+           android:orientation="vertical"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent">
+
+           <EditText
+               android:id="@+id/inEmail"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Email"
+               android:inputType="textEmailAddress"
+               android:padding="8dp" />
+
+
+           <EditText
+               android:id="@+id/inPassword"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Password"
+               android:inputType="textPassword"
+               android:padding="8dp" />
+
+           <EditText
+               android:id="@+id/inCnic"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Cnic"
+               android:inputType="number"
+               android:maxLength="13"
+               android:padding="8dp" />
+
+           <EditText
+               android:id="@+id/inMobile"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Mobile"
+               android:inputType="textPassword"
+               android:maxLength="11"
+               android:padding="8dp" />
+
+           <EditText
+               android:id="@+id/inAddress"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Address"
+               android:inputType="textPassword"
+               android:maxLength="60"
+               android:padding="8dp"
+               android:singleLine="false" />
+            </LinearLayout>
+
+    <Button
+        android:id="@+id/inSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
